@@ -135,10 +135,10 @@
 |---|---|
 | **작성 상태** | ✅ 완료 |
 
-- AI를 활용한 개발은 Concept이 구현된 Code 결과물에 제대로 반영되었는 지 추적성을 보장하는 것이 관건으로 생각됩니다
-- 이를 위해 아래의 2가지 방식은 매우 유용했습니다
-- RED→GREEN→REFACTOR 사이클
-- red/green/refactoring/developer 브랜치 전략
+- AI를 활용한 개발은 Concept이 구현된 Code 결과물에 제대로 반영되었는 지 추적성을 보장하는 것이 관건이라는 점을 이해
+- 이를 위해 아래의 2가지 방식은 매우 유용했음
+  - RED→GREEN→REFACTOR 사이클
+  - red/green/refactoring/developer 브랜치 전략
 
 
 ### 최선영
