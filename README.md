@@ -70,10 +70,11 @@
 |---|---|
 | **작성 상태** | ✅ 완료 |
 
-- RED 확인 후 GREEN, REFACTOR 전 RED gate(스텁 0건) 검증을 지켰다.
-- Dual-Track TDD로 Boundary 계약과 Domain 규칙을 분리해 학습·구현했다.
-- Golden Master 회귀(6건)를 REFACTOR 전에 고정해 RF-01 후에도 71/71·GM 6/6을 유지했다.
-- ECB 의존 방향·Report 추적성·도메인 상수 SSOT로 변경 추적을 쉽게 했다.
+- 1 커밋 = 1 RED 원칙
+- ECB 책임 분리 유지
+- Domain Model에 대한 100% TC 검증
+- Golden Master 구축
+- AI Ask 모드 적극 활용
 
 ### 권유리
 
@@ -163,10 +164,13 @@
 |---|---|
 | **작성 상태** | ✅ 완료 |
 
-- `tests/control/` 미착수(P0-0)로 Control 오케스트레이션 직접 검증이 약하다.
-- `solver.py`가 Control에 남아 ECB R-06 기술 부채가 있다.
-- `E001` vs `INVALID_SIZE` 이중 SSOT, validator 79%(5줄 미커버)가 남아 있다.
-- REFACTOR는 RF-01만 완료했고, GM 경로(`test_gm_01_*` vs `tests/golden_master/`) 혼선이 있다.
+- 외부 AI 도입 어려움
+- TDD 경험 부재 및 미숙
+- AI 활용 프로젝트 진행 미흡
+- 프롬프트 엔지니어링 부족
+- Refactoring 시 관련 TC 부족 (Unit TC, 골든 마스터)
+- AI 제안 검증 능력 미흡
+- 레이어 간 역할 혼재
 
 ### 권유리
 
@@ -250,9 +254,10 @@
 |---|---|
 | **작성 상태** | ✅ 완료 |
 
-- `tests/control/` P0-0 characterization RED 추가 후 `pytest tests/entity/ tests/control/` SSOT 고정.
-- R-06 `solver.py` → Entity: 소단위 커밋 + 매번 pytest·GM 6건 회귀.
-- R-01 오류 코드 통합 시 AC-FR-01-01·GM-TC 함께 실행; GM 경로 SSOT 정합.
+- TC 커버리지 개선 및 골든 마스터 TC 추가 도입
+- TC(골든 마스터 포함) 없는 Refactoring 금지
+- 프로젝트 진행 시 기획/개발/검증에 AI 적극 도입
+- 프로젝트 진행 시 TDD 도입
 
 ### 권유리
 
@@ -349,3 +354,4 @@
 | 1.1 | 2026-05-29 | 강희주 | 리뷰어 이름 갱신 |
 | 2.0 | 2026-05-29 | 강희주 | 8명 개인별 Keep/Problem/Try 작성 포맷 |
 | 2.1 | 2026-05-29 | 김석범 | KPT Keep/Problem/Try 완료 |
+| 2.2 | 2026-05-29 | 강희주 | 강희주 개인 KPT 내용 반영 |
