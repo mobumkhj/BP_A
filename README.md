@@ -5,7 +5,7 @@
 | **프로젝트** | [MagicSquare_1](https://github.com/mobumkhj/MagicSquare_1) / MagicSquare_xx |
 | **회고 대상 기간** | RED 설계(Report/13~14) → GREEN G-01~G-07(Report/17) → Golden Master·REFACTOR·QA·Export(Report/19~24) |
 | **작성자** | 강희주 |
-| **리뷰어** | 홍길동, 박문수 |
+| **리뷰어** | 권유리, 권태현, 김경민, 김석범, 김용준, 김주현 |
 | **작성일** | 2026-05-29 |
 | **기준 브랜치** | `refactor/refactor` |
 | **기준선 (Step 0)** | pytest **71 passed** · Golden Master **6/6** · 커버리지 Domain **95%** / Boundary **88%** / 전역 **90%** |
@@ -94,7 +94,7 @@
 ### 협업·회고
 
 - **KPT 주기화**: GREEN 마일스톤·REFACTOR Wave 종료마다 BP_A README 또는 Issue에 KPT를 남겨, Keep/Problem이 Report에만 묻히지 않게 한다.
-- **리뷰어 피드백 루프**: 홍길동·박문수 리뷰 시 ECB 위반·테스트 약화 여부를 체크리스트화해 code-reviewer 산출과 대조한다.
+- **리뷰어 피드백 루프**: 권유리·권태현·김경민·김석범·김용준·김주현 리뷰 시 ECB 위반·테스트 약화 여부를 체크리스트화해 code-reviewer 산출과 대조한다.
 
 ---
 
