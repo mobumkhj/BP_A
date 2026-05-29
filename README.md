@@ -39,7 +39,7 @@
 | 권유리 | ⬜ | ⬜ | ⬜ |
 | 권태현 | ✅ | ✅ | ✅ |
 | 김경민 | ✅ | ✅ | ✅ |
-| 김석범 | ⬜ | ⬜ | ⬜ |
+| 김석범 | ✅ | ✅ | ✅ |
 | 김용준 | ⬜ | ⬜ | ⬜ |
 | 김주현 | ⬜ | ⬜ | ⬜ |
 | 최선영 | ✅ | ✅ | ✅ |
@@ -112,11 +112,11 @@
 
 | | |
 |---|---|
-| **작성 상태** | ⬜ 미작성 |
+| **작성 상태** | ✅ 완료 |
 
-- *(여기에 작성)*
-- 
-- 
+- RED → GREEN → REFACTOR 순서와 ECB 의존 방향(`Screen → Boundary → Control → Entity`)을 지키며 REFACTOR를 진행했다.
+- `docs/qa_ssot_mapping.md`·Report 15~19·Step 0 실측(pytest, GM, cov)으로 **추측 없이** 문서와 숫자를 맞췄다.
+- README CheckList를 커밋 단위(A→B→C)로 실행하고, Prompt/Report 체인으로 작업·회귀를 추적했다.
 
 ### 김용준
 
@@ -203,11 +203,11 @@
 
 | | |
 |---|---|
-| **작성 상태** | ⬜ 미작성 |
+| **작성 상태** | ✅ 완료 |
 
-- *(여기에 작성)*
-- 
-- 
+- 구 프롬프트와 저장소 불일치(GM 경로, RED 19건, boundary 건수 등)로 Step 0·해석에 혼선·재작업이 있었다.
+- Boundary 커버리지에서 GUI 포함(46%) vs gate omit(98%) 기준이 초반에 헷갈렸다.
+- PyQt6 미설치·`test_grid_panel` skip·`python main.py` smoke 미착수로 Screen Track 마감이 남았다.
 
 ### 김용준
 
@@ -293,11 +293,11 @@
 
 | | |
 |---|---|
-| **작성 상태** | ⬜ 미작성 |
+| **작성 상태** | ✅ 완료 |
 
-- *(여기에 작성)*
-- 
-- 
+- QA·Export 세션 시작 전 `qa_ssot_mapping.md`·GM 경로·`.coveragerc` gate를 **프리플라이트**로 한 번 확인한다.
+- PyQt6 설치 후 grid_panel 테스트와 `python main.py` GUI smoke로 Screen Track을 닫는다.
+- `boundary_validator` dead code 등 잔여 REFACTOR는 **작은 커밋 1건**씩, GM 6/6·pytest 회귀 후 진행한다.
 
 ### 김용준
 
@@ -352,3 +352,4 @@
 | 1.0 | 2026-05-29 | 강희주 | KPT 회고 최초 작성 |
 | 1.1 | 2026-05-29 | 강희주 | 리뷰어 이름 갱신 |
 | 2.0 | 2026-05-29 | 강희주 | 8명 개인별 Keep/Problem/Try 작성 포맷 |
+| 2.1 | 2026-05-29 | 김석범 | KPT Keep/Problem/Try 완료 |
